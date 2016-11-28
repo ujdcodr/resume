@@ -1,1 +1,1 @@
-This is my Resume made using TexMaker.COmpile using TexLive
+This is my Resume made using TexMaker interface. Compile using TexLive
