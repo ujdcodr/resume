@@ -1,0 +1,147 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\usepackage{xcolor}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+% personal data
+\name{Ujjwal}{Pasupulety}
+\title{}                               % optional, remove / comment the line if not wanted
+%\address{\#A-1101, Nagarjuna Premier}{100 Ft Road,J.P. Nagar 6th Phase,	Bengaluru-560078}{Karnataka, India}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91-9901066474}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fax]{+3~(456)~789~012}
+\email{ujjwalpasupulety@gmail.com}                               % optional, remove / comment the line if not wanted
+\social[github]{ujdcodr} 
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{ujjwalpasupulety}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Career ObjectiveTo become a skilled cyber security professional with immense potential benefits for various organizations in the areas of Penetration testing, Web technologies and Coding.}
+% optional, remove / comment the line if not wanted
+                                 
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\footnotesize{\section{\small{Education}}}
+\cventry{2015-2019}{\href{http://infotech.nitk.ac.in/second-year-students}{\textcolor{blue}{2nd Year B. Tech, Information Technology}}}{National Institute of Technology Karnataka }{Surathkal, Mangalore }{}{\textit{CGPA:\textbf{9.35}/10(As of May 2017)}}  % arguments 3 to 6 can be left empty
+\cventry{2013-2015}{High School}{Delhi Public School South}{Bangalore }{Percentage:\textbf{96.8\%}                  [99\% in Computer Science]}{\href{http://south.dpsbangalore.net/index.php/events/happenings/item/293-exemplary-results-in-aissce-2015}{\textit{\textcolor{blue}{School Topper in Board Examinations}}}}
+
+\cventry{2007-2013}{Secondary School}{Delhi Public School South}{Bangalore }{\textit{CGPA:10/10}}{}
+
+\section{\small{Technical Skills}}
+\begin{itemize}
+\item{\textbf{Languages} - C/C++, Java, Python, HTML/CSS, BASH Script, ChucK}
+\item{\textbf{Tools} - \LaTeX , Git, ProjectPencil, IBM Bluemix, Blender, OpenShot}
+\end{itemize}
+
+\section{\small{Relevant Coursework}}
+
+Data Structures and Algorithms, Digital Design, Computer Architecture, Unix Programming, Real Analysis, Integral and Differential Calculus, Graph Theory, Probability Theory, Operating Systems, Design and Analysis of Algorithms, Computer Communication and Networking, Paradigms of Programming Languages, Computer Graphics, Object Oriented Analysis and Design
+
+\section{\small{Selected Projects}}
+
+\cvitem{1}{\textbf{\href{https://github.com/ujdcodr/ns3oss}{\textcolor{blue}{Open Source Contribution for Network Simulator 3(under review)}}}}
+Ported a Perl script that converted a file written in the Felix Connection Vector format into a format more suitable for reading by tmix-ns using C++. Analyzed perl script code line by line and applied the corresponding C++ constructs for file handling to perform the same task. The perl script was initially used for format conversion in Network Simulator 2 but is now outdated with the coming of Network Simulator 3 which required a new format converter.
+\newline
+
+\cvitem{2}{\textbf{\href{https://github.com/ujdcodr/ATM_Security-1}{\textcolor{blue}{Improvised Security system for Automated Teller Machines}}}}
+Improving on the existing security system of ATMs (using 4 -digit pins), the new system assigns a user a pattern password(just like the lock screen of an android smart phone). Implemented in Java using Swing for the UI. Increases ATM security by a factor of 40 through pattern generated passwords. Used modern Software Engineering Principles with the help of UML diagrams.
+\newline
+
+\cvitem{3}{\textbf{\href{https://github.com/ujdcodr/Computer_Graphics_with_OpenGL}{\textcolor{blue}{Blackjack Computer Game}}}}
+A Human versus Computer version of the popular casino game using the OpenGL API with the help of the Simple OpenGL Image Library(SOIL) for texture mapping of images onto 2 dimensional surfaces. A random number generator was used to generate card values and suites until either the player or computer won.
+
+
+\cvitem{4}{\textbf{\href{https://soundcloud.com/ujjwal-pasupulety}{\textcolor{blue}{Synthesis of Computer Music using the ChucK programming language}}}}
+Learned the basics behind Computer generated music,i.e., CompuMusic and developed musical compositions using ChucK, an object oriented audio programming language. Using the inbuilt classes for various instruments and programming techniques like using arrays to store frequency values along with time periods, complete score sheets were created.Music can be found \href{https://soundcloud.com/ujjwal-pasupulety}{\textcolor{blue}{here}}
+\newline
+
+\cvitem{5}{\textbf{\href{www.techngizmos1.blogspot.com}{\textcolor{blue}{Technology review blog TechnGizmos}}}}
+1,20,000+ page views and 550+ likes on Facebook page. Acquired domain name www.techngizmos.com from 2012-2013. Explored and implemented various Search Engine Optimization Techniques such as link sharing, writing content based on frequently used keywords and guest posts. Modified the original XML design templates for improving user experience by adding widgets, share buttons and a comment section 
+
+
+
+\cvitem{6}{\textbf{\href{https://github.com/ujdcodr/unix_mini_project}{\textcolor{blue}{Unix Utility Suite}}}}
+An Alarm Clock, a weather forecast tool and a newsreader all under one simple GUI based Utility Suite made  with the Zenity toolkit. Shell Scripts plus a Python backend for web scraping.
+
+
+
+\cvitem{7}{\textbf{\href{https://github.com/ujdcodr/Analysis_of_Algorithms}{\textcolor{blue}{Value Flag Length Encoding(VaFLE)}}}}
+Improved on {\href{http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6148417}{\textcolor{blue}{this paper}}} for Run Length Encoding by proposing a set of triples namely Value Flag and Length as opposed to the Value Length Pairs in the existing Modification. Provides better data compression than the algorithm proposed in the paper at the same speed as traditional RLE.
+
+
+
+\section{\small{Achievements \& Extra-curriculars}}
+
+\begin{itemize}
+
+\item{Karnataka Common Entrance Test (KCET) Rank: \textbf{336}}
+\item{Joint Entrance Examination (Mains) - All India Rank: \textbf{5412}} 
+\item{National Science Olympiad 2007(SOF)-  All India Rank: \textbf{398}}   
+\item{Selected as one among 20 teams to participate in a Make-A-Thon organized by Samsung at National Institute of Technology, Trichy using the ARTIK IoT Platform}
+\item{Won several national level competitions in drawing and painting organized in Kuwait}
+\item{Finalist in the 1st Indian edition of HP Codewars held in Bangalore}
+\item{Campus Ambassador for Bosch RBEI, NITK. Placed 1st in INFOTSAV Campus Ambassador Meet 2017 for innovative ideas}
+\item{Core Member and Publicity Coordinator of Web Enthusiasts' Club, NITK}
+\item{Junior House Captain in school}
+\end{itemize}
+
+
+\section{\small{Interests}}
+Public Speaking, Creative Writing, Poetry, Drawing, Painting, Blogging, Playing the Keyboard, Quizzing, Video Editing
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+\end{document}
+
